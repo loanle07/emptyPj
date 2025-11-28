@@ -21,7 +21,8 @@ import com.kms.katalon.core.util.KeywordUtil
 
 // 1. Định nghĩa Hash của Commit cần kiểm tra
 // Thay thế bằng SHA-1 hash của commit bạn muốn verify
-def commitHash = "14065ec5251dadf127025ec32fce37a96cd8085d"
+def commitHash = "34ea4cdcda5e481b9d786bbff856045d166389d7"
+
 
 //def gitExecutablePath = "/usr/bin/git"
 // 2. Định nghĩa lệnh Git Verify

@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil
 
 // 1. Định nghĩa Hash của Commit cần kiểm tra
 // Thay thế bằng SHA-1 hash của commit bạn muốn verify
-def commitHash = "34ea4cdcda5e481b9d786bbff856045d166389d7"
+def commitHash = "e11c7aff24c27484c2f2ec2c8aa4b72d4728796f"
 
 
 //def gitExecutablePath = "/usr/bin/git"
@@ -52,7 +52,7 @@ KeywordUtil.logInfo("Error Output:\n"+errorOutput)
 // --- VERIFICATION (Kiểm tra xem commit có được ký hợp lệ không) ---
 
 def verificationSuccess = false
-def successString = "git version 2.39.5"// Chuỗi xác nhận GPG thành công
+def successString = "Good signature from"
 
 if (output.contains(successString)) {
 	verificationSuccess = true
